@@ -2,11 +2,11 @@ package kitchenpos.products.tobe.domain;
 
 import java.util.List;
 
-class FakeProfanity implements Profanity {
+public class FakeProfanity implements Profanity {
     private final List<String> values = List.of("damn");
 
     @Override
-    public boolean isContains(final String name) {
+    public boolean containsProfanity(final String name) {
         return values.contains(name);
     }
 }
